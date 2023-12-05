@@ -6,6 +6,10 @@
 
 <h1 class="heading-1"><img align="center" height="60" src="https://raw.githubusercontent.com/igormidev/dart_debouncer/master/art/logo_image.png"> Dart debouncer</h1>
 
+A package for creating debounce in dart will possibilities of multi instances debounce. With `no singleton pattern`, this package provides a convenient way to handle debouncing scenarios for user interactions, such as button presses or text input changes, in order to enhance the user experience and avoid unintended actions, unnecessary logic execution or frequent updates.
+
+--- 
+
 # How to use
 First, instanciate a Debouncer class.<pr>
 Notice: it is not a singletton so you have the option to create multiple instances of deboncer each one of them with one logic.

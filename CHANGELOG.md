@@ -1,3 +1,6 @@
+## 1.0.2
+- README.md update - Description of package added bellow package title
+
 ## 1.0.1
 - Added a example to package.
 - Added more documentation in atributes of package.
