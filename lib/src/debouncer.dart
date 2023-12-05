@@ -1,5 +1,6 @@
 import 'dart:async';
 
+/// The main debouncer class used to create a debouncer
 class Debouncer {
   /// The debouncer class is used to debounce a function
   Debouncer({

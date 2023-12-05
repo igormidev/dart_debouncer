@@ -1,3 +1,11 @@
+<style>
+.heading-1{
+  font-size: 360%!important;
+}
+</style>
+
+<h1 class="heading-1"><img align="center" height="50" src="https://github.com/igormidev/enchanted_collection/blob/master/art/logo_image.png?raw=true"> Dart debouncer</h1>
+
 # How to use
 First, instanciate a Debouncer class.<pr>
 Notice: it is not a singletton so you have the option to create multiple instances of deboncer each one of them with one logic.
@@ -21,7 +29,8 @@ TextFormField(
 ```dart
 debouncer.dispose();
 ```
-Otherwise it will be executed even if you are not more in the context where it has been placed.
+
+⚠️ Note: Calling dispose `is not mandatory`. But if you don't dispose it the function will be executed even if you are not more in the context where it has been placed. So if, for example, the function inside the debouncer uses a dependencies that dosen't exist any more you will get an error. This will basically cancel the debounce timer and execution.
 
 # Other helpfull functions
 
