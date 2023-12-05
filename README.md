@@ -4,7 +4,7 @@
 }
 </style>
 
-<h1 class="heading-1"><img align="center" height="50" src="https://github.com/igormidev/enchanted_collection/blob/master/art/logo_image.png?raw=true"> Dart debouncer</h1>
+<h1 class="heading-1"><img align="center" height="60" src="https://raw.githubusercontent.com/igormidev/dart_debouncer/master/art/logo_image.png"> Dart debouncer</h1>
 
 # How to use
 First, instanciate a Debouncer class.<pr>
