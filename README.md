@@ -60,6 +60,30 @@ debouncer.addOnEndFunction(() {
 });
 ```
 
+### Garantee an function will not bee runned in parallel to the debouncer function
+Whant to run a function but ensure it won't run at the same time an asyncronous execute function is running on the debouncer? No problem, Use `garanteedExecutionAfterDebounceFinished` for that.
+```dart
+final debouncer = Debouncer(timerDuration: Duration(seconds: 1));
+
+decouncer.resetDebounce(() {
+  await Future.delayed(Duration(seconds: 1));
+  print('Done!');
+});
+
+// Will not execute until debounce function is running. Will wait it finish first
+debounter.garanteedExecutionAfterDebounceFinished(() {
+  print('Only runned after 2 seconds');
+});
+print(isDebouncerRunning);
+```
+
+### Know if debounce function is active/running
+```dart
+final debouncer = Debouncer(timerDuration: Duration(seconds: 1));
+final bool isDebouncerRunning = debounter.isTimerActive();
+print(isDebouncerRunning);
+```
+
 ### Change debounce duration
 ```dart
 // The debouncer time is 1 sec

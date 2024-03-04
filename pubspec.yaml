@@ -1,12 +1,16 @@
 name: dart_debouncer
 description: "A package for creating debounce in dart will possibilities of multi instances debounce. No singleton pattern"
-version: 1.0.2
+version: 1.1.0
 homepage: https://github.com/igormidev/dart_debouncer
 repository: https://github.com/igormidev/dart_debouncer
 issue_tracker: https://github.com/igormidev/dart_debouncer/issues
 
 environment:
   sdk: ^3.2.0
+
+screenshots:
+  - description: The logo of the package.
+    path: art/main_logo.PNG
 
 dev_dependencies:
   lints: ^2.1.0
